@@ -1,0 +1,60 @@
+    <!-- Formulario básico -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade da aula de formst</title>
+</head>
+<body>
+    <form>
+        <label for="nome">Seu nome</label>
+        <input type="text" placeholder="Nome" required id="nome" name="nome"/>
+
+        <label for="snome">Seu Sobrenome</label>
+        <input type="text" placeholder="Sobrenome" required id="snome" name="snome"/>
+ 
+        <label for="email">Insira Seu E-mail</label>
+        <input type="text" name="email" id="email" required placeholder="E-mail"/>
+        
+        <br>
+
+        <label for="desc">Descreva sua motivação para participar do evento</label>
+        <textarea name="desc" required placeholder="Escreva" id="desc" cols="60" rows="1"></textarea>
+
+        <br>
+
+        <label for="modulo">Selecione seu modulo do curso</label>
+        <select name="modulo" required id="modulo">
+            <option value="">Selecione um Módulo</option>
+            <option value="M1">Módulo 1</option>
+            <option value="M2">Módulo 2</option>
+            <option value="M3">Módulo 3</option>
+            <option value="M4">Módulo 4</option>
+            <option value="M5">Módulo 5</option>
+            <option value="M6">Módulo 6</option>
+        </select>
+
+        <br>
+
+        <label for="senha">Insira uma senha</label>
+        <input type="password" required placeholder="Senha" id="senha" name="senha"/>
+        
+        <label for="rsenha">Repita a senha</label>
+        <input type="password" required placeholder="Repita a Senha" id="rsenha" name="rsenha"/>
+
+        <br>
+
+        <p>Deseja receber novidades?</p>
+
+        <label for="sim">Sim</label>
+        <input type="radio" name="nov" id="sim" required value="sim"/>
+
+        <label for="nao">Não</label>
+        <input type="radio" name="nov" id="nao" required value="não"/>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>

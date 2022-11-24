@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+            <!-- Formulario baseado em caixas de texto e numeros -->
+   <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome.." required="true" />
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite uma senha.." maxlength="18" required="true" />
+
+        <button type="submit">Cadastrar</button>
+   </form>
+
+
+                    <!-- Formulario de input radio -->
+    <form>
+        <p>Qual o seu metodo de contato preferido?</p>
+
+        <label for="email">E-mail</label>
+        <input id="email" type="radio" required name="metodoDeContato" value="email"/>
+
+        <label for="telefone">Telefone</label>
+        <input id="telefone" type="radio" required name="metodoDeContato" value="telefone"/>
+
+        <label for="whatsapp">Whatsapp</label>
+        <input id="whatsapp" type="radio" required name="metodoDeContato" value="whatsapp"/>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+                                 <!-- Forumlario de input select -->
+    <form>
+        <label for="plano">Selecione um plano</label>
+        <select name="plano" required="true" id="plano">
+            <option value="">Esolha uma opção</option>
+            <option value="free">Free</option>
+            <option value="premium">Premium</option>
+            <option value="pro">Pro</option>
+        </select>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+                                    <!-- Formulario de textarea -->
+    <form>
+        <!-- cols = colunas || rows = linhas -->
+        <label for="msg">Digite seu comentário</label>
+        <textarea
+            placeholder="Adicione aqui seu comentário"
+            id="msg" 
+            cols="20" 
+            rows="2"
+            name="msg"
+            required
+    ></textarea>
+    <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
