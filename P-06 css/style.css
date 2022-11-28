@@ -1,0 +1,35 @@
+h1{
+    color: blueviolet;
+    font-size: 200px;
+    text-align: center;
+    border: 5px solid blueviolet;
+    border-radius: 30%;
+    margin: 10px 0px 0px 6px;
+}
+
+.heade {
+    text-align: center;
+    background-color: aquamarine;
+    color: black;
+    font-size: 80px;
+}
+
+body{
+    background-color: black;
+}
+
+#babidifelino{
+    margin-left: 470px;
+    border: 10px solid blue;
+    border-radius: 50%;
+}
+p{
+    font-size: 50px;
+    color: white;
+    margin-top: 1px;
+    background-color: darkblue;
+    height: 60px;
+    width: 400px;
+    text-align: center;
+    margin-left: 470px;
+}
