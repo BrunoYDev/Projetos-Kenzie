@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+body{
+   padding: 0;
+   margin: 0;
+}
+
+header{
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    display: flex;
+    max-width: 1300px;
+    background-color: #F3F4F5;
+}
+
+.container .mainContent{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Inter', sans-serif;
+}
+
+.mainContent .cc{
+    width: 287px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.mainContent .mimage{
+    margin: 0;
+    width: 286px;
+    height: 175px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+.mainContent .cc h2{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.mainContent .cc p{
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.mainContent .cc .cat{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.mainContent .cc .cat ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mainContent .cc .cat li{
+    margin-right: 10px;
+    background-color:#dddddd;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+}
+
+aside .recent{
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+.recent .reccont{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.recent h3{
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+.recent h3 a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+.recent .aimg{
+    width: 70px;
+    height: 58px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+aside .popular{
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+.popular .pocont{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.popular h3{
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+.popular h3 a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+.popular .aimg{
+    width: 70px;
+    height: 58px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+footer{
+    display: flex;
+    background-color: #0D0D0E;
+    color: white;
+}
+
+footer .end{
+    margin: 0;
+    padding: 0;
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.end #foot{
+    margin-left: 250px;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    line-height: 30px;
+}
+
+.endim .fimage{
+    height: max-content;
+}
+
+.end .endim{
+    margin: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.popular .aimg:hover{
+    border: 2px solid green;
+    border-radius: 8px;
+    cursor:pointer;
+}
+.popular h3:hover{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    cursor:pointer;
+}
+
+.reccont .aimg:hover{
+    border: 2px solid green;
+    border-radius: 8px;
+    cursor:pointer;
+}
+.recent h3:hover{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    cursor:pointer;
+}
+
+.mainContent .cc h2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.cc .mimage:hover{
+    border: 2px solid green;
+}
+
+.cc h2 a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
