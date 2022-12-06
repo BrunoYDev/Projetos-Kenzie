@@ -1,0 +1,114 @@
+Acessar página inicial do website
+
+Realizar cadastro
+
+Acessar aba de celulares
+
+Procurar produto
+
+Clicar no produto
+
+Acessar página com detalhes
+
+Clicar no botão para inserir no carrinho de compras
+
+Clicar na aba "Carrinho de compras"
+
+Clicar no botão "Finalizar compras"
+
+Selecionar o método de pagamento (neste exemplo, por cartão de crédito)
+
+Inserir os dados do cartão de crédito
+
+Cadastrar o cartão no site
+
+Clicar no botão para concluir a compra
+
+Checar o email para validar se a compra foi realizada
+
+Estrutura:
+Se (internet == on)
+acessar página de compra
+se não
+reiniciar internet
+
+se (realizar cadastro == bem sucecido)
+acessar a aba de celulares
+se não
+verificar informações colocadas
+
+se (acessar a aba celulares == true)
+procurar produto
+se não
+saiá do site
+
+se (procurar o produto == true)
+clicar no produto
+se não
+saiá do site
+
+se (clicar no produto == true)
+acessar página detalhes
+se não
+verificar conexão do mouse
+
+se (acessar página de detalhes == true)
+adicionar ao carrinho
+se não 
+saiá do site
+
+se (adicionar ao carrinho == true)
+clique no carrinho de compras
+se não
+verificar disponiblidade de itens
+
+se (clicar no carrinho de compras == true)
+finalizar compra
+se não
+refaça o request
+se (erro == true)
+saia do site
+
+se (finalizar compra == true)
+selecione método de pagamento
+se não
+refaça o request
+se (erro == true)
+saia do site
+
+se (método de pagamento == crédito)
+inserir dados do cartão
+se não
+saia do site
+
+se (inserir dados do cartão == true)
+cadastrar o cartão no site
+se não
+verificar os dados colocados
+
+se (cadastrar o cartão no site == true)
+concluir compra
+se não
+refazer o request
+se (erro == true)
+saia do site
+
+se (concluir compra == true)
+checar email para a finalização do pedido
+se não
+refazer request
+se (erro == true)
+saia do site
+
+se (chegar email para verificar a compra == true)
+encerrar processo
+se não
+refaça o request
+se (erro == true)
+re-insira as informações do email e logue
+se não reinicie a internet, e refaça o processo
+
+enquanto cliente.achouCelular == false && timeLimit < 1m
+continuar a procurar
+cao contrario
+saia do site
