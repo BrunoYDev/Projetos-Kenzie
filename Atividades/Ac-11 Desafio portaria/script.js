@@ -1,8 +1,7 @@
 let nome = prompt("Digite seu nome:");
 let idade = parseInt(prompt("Digite sua idade:"));
 
-
-if(idade >= 18){
+if(idade >= 18 && idade < 60){
     let estaAcompanhado = prompt("Digite \"S\" caso esteja acompanhado ou \"N\" caso não esteja");
     if(estaAcompanhado == "S" || "s"){
         estaAcompanhado = true;
