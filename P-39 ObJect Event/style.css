@@ -1,0 +1,74 @@
+body{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+body header .title{
+    background-color: white;
+    padding: 15px;
+    font-family:monospace;
+    font-weight: bold;
+    border:solid 1px black;
+    border-radius: 20px;
+}
+
+.container{
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    max-height: 500px;
+    list-style: none;
+    border: 1px solid black;
+}
+.valorProduto{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    color: red;
+}
+.liquidacao{
+    padding:10px 30px 10px 30px;
+    border-radius: 10px;
+    background-color: green;
+    font-size: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hidden{
+    display: none;
+}
+
+.valorDesconto{
+    color:green;
+    font-size: 30px;
+}
+.distribuidor{
+    font-weight: lighter;
+    font-size: 26px;
+}
+
+@-moz-keyframes hide {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
