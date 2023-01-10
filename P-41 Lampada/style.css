@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #303e73;
+    }
+
+    #space_lamp {
+        width: 400px;
+        height: 500px;
+        background-repeat: no-repeat;
+        }
+        .off {
+            background-image: url("./assets/img/apagada.svg");
+            width: 400px;
+            height: 500px;
+          }
+        .on {
+            background-image: url("./assets/img/acesa.svg");
+            width: 400px;
+            height: 500px;
+          }
