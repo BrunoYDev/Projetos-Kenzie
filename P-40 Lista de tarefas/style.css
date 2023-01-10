@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: -5px 47px 88px -27px rgba(0,0,0,0.52);
+    -moz-box-shadow: -5px 47px 88px -27px rgba(0,0,0,0.52);
+    box-shadow: -5px 47px 88px -27px rgba(0,0,0,0.52);
+}
+
+.allTasks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.tasks{
+    display: flex;
+    background-color: white;
+    -webkit-box-shadow: -5px 47px 88px -50px rgba(0,0,0,0.52);
+    -moz-box-shadow: -5px 47px 88px -50px rgba(0,0,0,0.52);
+    box-shadow: -5px 47px 88px -50px rgba(0,0,0,0.52);
+    border-radius: 10px;
+    flex-direction: column;
+    width: 700px;
+    height: 100%;
+    gap: 20px;
+    padding: 30px 50px;
+}
+
+.tasks h2{
+    font-family:'Quicksand', sans-serif;;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.listItem{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 6px;
+    background-color: #F1F3F5;
+    list-style: none;
+    width: 98%;
+    height: 60px;
+}
