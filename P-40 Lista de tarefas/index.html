@@ -14,10 +14,27 @@
             <h1 id="title">My Task's</h1>
         </nav>
     </header>
+
     <main class="allTasks">
+        <div class="adicionar">
+            <h2 id="title">Inserir Tarefa</h2>
+            <input type="text" name="novoItem" class="novoItem" placeholder="Digite a sua tarefa">
+            <select name="tipo" class="tipo">
+                <option value="vazio">Escolha a prioridade</option>
+                <option value="urgente">Urgente</option>
+                <option value="prioritario">Prioritário</option>
+                <option value="normal">Normal</option>
+            </select>
+            
+        </div>
+        <div id="uniqueButton"><button class="addItem">Adicionar tarefa na lista</button></div>
+        <div class="taskBoard">
+        <h2 id="title">Tasks</h2>
         <ul class="tasks">
-            <h2>Tasks</h2>
+            
+            
         </ul>
+        </div>
     </main>
 </body>
 </html>
