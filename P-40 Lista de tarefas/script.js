@@ -47,7 +47,6 @@ let tasks = [
   function renderizarTela(list){
 
     for(let i=0; i<list.length; i++){
-      cont++;
         let listItem = document.createElement('li');
         let listItemParag = document.createElement('p');
         listItem.classList.add('listItem');
