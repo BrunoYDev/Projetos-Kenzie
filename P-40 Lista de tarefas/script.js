@@ -58,10 +58,10 @@ let tasks = [
         deleteButton.innerText = 'Delete';
         deleteButton.addEventListener('click',function(e){
           if(list.length != i){
-            for(let i=0; i<list.length; i++){
+            for(let j=0; j<list.length; j++){
             listItem.remove('');
-            newArr2.splice(i,1);
-            list.splice(i,1);
+            newArr2.splice(j,1);
+            list.splice(j,1);
             }
           }
             listItem.remove('');
