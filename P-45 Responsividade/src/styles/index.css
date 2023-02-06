@@ -1,0 +1,109 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Netflix sans;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    position: relative;
+    
+}
+
+.header__logo{
+    color: #364FC7;
+}
+
+.header__container button{
+    display: none;
+}
+
+.navBar__list{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.navBar__list li{
+    padding: 0px 0px;
+    margin: 0px;
+}
+
+.navBar__list li:hover{
+    font-weight: 1000;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+img {
+    width: 32px;
+    height: 32px;
+    display: none;
+}
+
+@keyframes desappear {
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(-200%);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.remove{
+    animation: desappear 0.2 linear;
+}
+
+@media (max-width:768px){
+    .navBar__list{
+        display: none;
+        margin-top: -150%;
+        /* transition: cubic-bezier(0.64, 0.02, 0.41, 1.25) .1s; */
+    }
+    .menu__mobile{
+        display: block;
+    }
+    .navBar__list{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .navBar__container button{
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        border: 1px solid transparent;
+        background-color: transparent;
+    }
+
+    .show{
+        display: block;
+        position: absolute;
+        top: 5.2rem;
+        left: 6px;
+        margin-top: 18px;
+        animation: appear 0.2s linear;
+    }
+}
